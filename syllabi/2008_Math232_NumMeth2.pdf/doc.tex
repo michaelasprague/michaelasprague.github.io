@@ -1,0 +1,254 @@
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{palatino}
+\usepackage{fancyhdr}
+\usepackage{fullpage}
+
+% document size parameters
+
+% document parameters
+\setlength{\textheight}{9in}
+
+\setlength{\parindent}{0.in}
+\setlength{\parskip}{0.1in}
+
+\pagestyle{fancyplain}
+\setlength{\topmargin}{-0.4in}
+\setlength{\headsep}{0.4in}
+\lhead{\large{\textbf{MATH 232: Numerical Sol'n of Differential Eq's
+II}}--Syllabus}
+\rhead{\textit{Fall 2008}}
+
+
+\begin{document}
+\sloppy 
+\textbf{Instructor:} 
+Michael Sprague, Assistant Professor, School of Natural Sciences\\ 
+Office: Science \& Engineering Rm.~332, 209-228-4179\\
+Mobile: (209) 217-7240\\
+E-mail: msprague@ucmerced.edu
+
+\textbf{Lecture Time \& Location:} MW 2:00 pm -- 3:15 pm, COB 261
+
+\textbf{Office Hours:} Monday \& Wednesday:  3:15--4:00 pm  (S\&E 332)\\
+Alternatively, students are welcome to e-mail, call, or just stop by my
+office.  I am rarely on campus on Tuesdays \& Thursdays, but can usually be
+reached via email or cell phone.
+
+\textbf{Course Webpage:} Resources and homework assignments are located at
+\vspace{-0.15in}
+\begin{center}
+   \textbf{http://faculty.ucmerced.edu/msprague/math232\_f2008.html}
+\end{center}
+
+\textbf{Prerequisite:} Math 231 or Consent of Instructor 
+
+\textbf{Course Units:} Four
+
+\textbf{Catalog Description:} 
+Fundamental methods presented in Math 231 are used as a base for discussing
+modern methods for solving partial-differential equations.  Numerical
+methods include variational, finite element, collocation,  spectral, and
+FFT. Error estimates and implementation issues will be discussed.  A
+significant amount of programming will be required.
+
+\textbf{Course Goals:}
+%
+We will discuss three broad classes of numerical methods that are very
+common in science and engineering today  for finding approximate solutions
+to partial-differential equations (PDEs).  These methods are  ($i$)
+finite-difference methods, ($ii$) spectral methods, and ($iii$)
+finite-element methods.  These methods will be applied to standard elliptic,
+parabolic, and hyperbolic PDEs.  At the end of this course, students will 
+
+\vspace{-0.1in}
+\begin{enumerate}
+
+\item understand the fundamental theoretical underpinnings of the methods
+discussed
+
+\item understand the relative strengths and weaknesses of the methods in the
+context of the three PDE classes
+
+\item understand the importance of validation of numerical methods
+
+\item understand the concepts of consistency, stability, and convergence
+
+\item be able to effectively implement the numerical methods discussed
+
+\end{enumerate}
+
+\textbf{Learning Outcomes:}
+At the end of this course, students should be able to 
+
+\vspace{-0.1in}
+\begin{itemize}
+
+\item describe typical solution behavior for the three different PDE types
+(supports goals 2, 5);
+
+\item classify a PDE, and choose an appropriate and efficient numerical method
+to find an approximate solution (supports goals 1--3, 5);
+
+\item write a computer program than implements the numerical method
+(supports goals 1, 3, 5); 
+
+\item choose an appropriate discretization level for the desired accuracy
+(supports goals 1, 4, 5);
+
+\item demonstrate the validity of an approximate numerical solution
+(supports goals 3, 5);
+
+\item present effectively numerical results in written and graphical form
+(supports goals 1--3).
+
+\end{itemize}
+
+\clearpage 
+\textbf{Assessment \& Scoring:} 
+%
+The course grade is based on homework (85\%) and class participation (15\%).
+This point distribution was chosen such that, for a student to earn an A, he
+or she must participate in lectures by asking and answering questions.    If
+a student has overall unsatisfactory class participation, I will email the
+student asking for more involvement.  Please let me know if
+you have any questions regarding your participation level.
+
+Each homework assignment will be scored on a scale of 100 points.  Letter
+grades will be given in the \textbf{approximate} framework: A: 90-100\%, B:
+80--90\%, C: 70--80\%, D: 60--70\%.  Homework will be assigned approximately
+every two weeks with a total of six or seven assignments.  Late homework
+will not be accepted without prior permission.  
+
+\textbf{Homework Requirements:} 
+%
+When preparing your homework, present your answers in a manner that
+demonstrates your understanding of the concept at hand.   To this end, try
+to understand the point behind me asking you the question or presenting you
+with the task.  If you don't understand the point, please come talk to me
+and we can discuss it further.
+
+Homework presentation is expected to be of high quality in content,
+technical writing, and presentation.   Please heed the following
+when preparing homework:
+
+\vspace{-0.1in}
+\begin{itemize}
+
+\item Homework should be computer generated (i.e., prepare your homework
+with Word or LaTeX;  If you are not already familiar with the use of LaTeX,
+I highly encourage you to use this course as an opportunity to learn it).
+
+\item Present data graphically whenever possible. 
+
+\item All graphs \& figures need to be numbered with appropriate captions
+and properly annotated (legends, labeled axes, etc).  
+
+\item Write up conclusions that you draw from any graphs and/or figures.
+
+\item All programs should be included as appendices to the homework.  
+
+\item Please try to layout your homework so that paper use is minimized. For
+example, don't use a whole sheet of paper to print a three-line code.
+
+\item You are encouraged to work in groups. However, \textbf{all work turned
+in must be your own.} You must \textbf{list explicitly any outside sources
+employed} (\textit{e.g.}\ websites, \textit{Mathematica}, books, etc.) for
+each problem you solve.  This does not mean that you are allowed to copy a
+solution should you find it posted elsewhere (see Academic integrity below).
+All programs must be written by you; no ``copying and pasting.''
+
+\end{itemize}
+
+\textbf{Textbooks:} There are no required textbooks for this course.
+However, reading assignments will be taken from the list of titles below,
+which are held on a non-circulating basis in the library. 
+
+\vspace{-0.1in}
+\begin{itemize}
+
+ \item Pinchover \& Rubinstein, \textit{An Introduction to Partial
+Differential Equations}, Cambridge University Press, 2005
+
+  \item Strikwerda, \textit{Finite Difference Schemes and Partial
+Differential Equations}, SIAM, 2004
+
+\item Canuto et al., \textit{Spectral Methods: Fundamentals in Single
+Domains}, Springer, 2006
+
+\item Elman, Silvester \& Wathen, \textit{Finite elements and fast iterative
+solvers: with applications in incompressible fluid dynamics}, Oxford
+University Press, 2005.  (The first chapter is available as a free online
+sample; chapter 1 is all we may cover:
+http://www.oup.co.uk/pdf/0-19-852868-X.pdf)
+
+\end{itemize}
+
+\clearpage
+\textbf{Other Useful References:} 
+
+\vspace{-0.1in}
+\begin{itemize}
+
+  \item Boyd, \textit{Chebyshev and Fourier Spectral Methods: Second Revised
+Edition}, Dover, 2001
+
+  \item Gottlieb \& Orszag, \textit{Numerical Analysis of Spectral Methods:
+Theory and Applications}, SIAM, 1977
+
+ \item Iserles, \textit{A First Course in the Numerical Analysis of
+Differential Equations}, Cambridge University Press, 2000
+
+ \item Oden \& Reddy, \textit{An Introduction to the Mathematical Theory of
+Finite Elements} (\$16 version to be  
+released by Dover on Aug 28)
+
+\end{itemize}
+
+
+
+\textbf{Computers, Software \& Programs:} You may use a calculator (graphing or
+otherwise) or other computational tool (\textit{e.g.}, Mathematica, Maple,
+Matlab, etc) to aid in your completion of homework assignments.  
+
+Your homework will require a significant amount of programming and data
+presentation.   While any programming language will do, I recommend either
+Matlab or  free alternative to Matlab (Octave or python).    However, there
+is at least one assignment where I will ask you to use the FFT feature in
+Matlab.  When writing your programs, 
+
+\vspace{-0.1in}
+\begin{itemize}
+\item use many subroutines;
+\item write many comments.
+\end{itemize}
+
+\textbf{Dropping the Course:}  Please see the UC Merced \textit{General
+Catalog} for more details.
+
+\textbf{Special Accommodations:} If you qualify for accommodations
+because of a disability, please submit a letter from Disability
+Services to the instructor in a timely manner so that your needs may
+be addressed.  Student Affairs determines accommodations based on
+documented disabilities.
+I will make every effort to accommodate all students who, because of
+religious obligations, have conflicts with scheduled exams, assignments, or
+required attendance.  Please speak with me during the first week of classes
+regarding any potential academic adjustments or accommodations that may
+arise due to religious beliefs during this term.
+
+\textbf{Academic Integrity:}  Academic integrity is the foundation of an
+academic community and without it none of the educational or research goals
+of the university can be achieved.  All members of the university community
+are responsible for its academic integrity.  Existing policies forbid
+cheating on examinations, plagiarism and other forms of academic dishonesty.
+The current policies for UC Merced are described in the  Academic Honesty
+Policy.  Go to 
+http://studentlife.ucmerced.edu/ and look under ``Student Judicial
+Affairs.''
+
+
+\end{document}
